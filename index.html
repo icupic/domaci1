@@ -3,83 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            padding: 10px 10px 10px 10px;
-            background: white;
-            margin: auto;
-        }
-    
-    .header{
-        padding: 50px;
-        text-align: left;
-        background: white;
-        background-image: url('./Path\ 1361.png');
-        background-size: 70% 100%;
-        background-repeat: no-repeat;
-        background-position: right top;
-
-    }
-    .flex-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            position: relative;
-        }
-    .nav-bar{
-        margin-top: 0%;
-        margin-right: 0%;
-        
-    }
-    .title{
-        align-items: flex-start;
-        color: blue;
-        font-size: medium;
-    }
-    li {
-        float: left; 
-        list-style-type: none;
-        text-decoration: none;
-        }
-    a {
-        display: inline;
-        padding: 8px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-    }
-    #logIn{
-        border: orange solid ;
-        background-color:orange;
-        border-radius: 30%;
-    }
-
-    .grid-container{
-        display: grid;
-        padding: 10px;
-        grid-template-columns: 50% 50%;
-    }
-    .column1{
-        font-size: 30px;
-        color: darkslategrey;
-
-    }
-    #paragraph{
-        font-size: 20px;
-        color: darkslategrey;
-    }
-    #btn{
-        background-color: blue;
-        border-radius: 50%;
-        width: 100px;
-        height: 50px;
-    }
-   
-
-   
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
 </head>
 <body>
     
@@ -103,20 +29,78 @@
 
     <div class="grid-container">
         <div class="column1">
-            <h1>Provide You best UI Service</h1>
-            <p id="paragraph">Mobile App Design and Developement Studio. You can hire us.</p>
+            <h1>Provide You best<br> Best UI Service</h1>
+            <p id="paragraph">Mobile App Design and Developement Studio. You can hire us.</p> <br>
             <button type="button" id="btn">
-                <img src="./wave.png" alt="button" id="wave-img"  width="20px" height="20px">
-                Wave Me
+                <img src="./images/header/waving-hand.png" alt="button" id="bttn_img"  width="25px" height="25px"> 
+              Wave Me 
             </button>
         </div>
         <div class="column2">
-            <img src="./cover.png" alt="cover page" width="400px" height="400px">
+            <img src="./images/header/undraw_pair_programming_njlp.png" alt="cover page" >
+        </div>
+    </div>
+    <div class="main_services">
+        <div class="h_service">
+        <p>OUR SERVICES</p>
+        <h2>We Provide Best Quality Service</h4>
+        <p id="p_1">Our commitment to quality ensures that your applications get the best UI design <br>possible. UI-UX design is more than just pixels and animations, but the entire application <br>
+            experience.</p> <br> <br>
+    </div>
+        <div class="service">
+            <div class="service_1" >
+               <img src="./images/service/001-data.png" alt="data"><br><br>
+               <p>Website Ui</p>
+               <p>Fast, Powerful & Most Secure Network Solutions for Smart Home & Businesses</p><br>
+               <a href="#">Read more</a>
+            </div>
+            <div class="service_2">
+                <img src="./images/service/003-paint.png" alt="data"><br> <br>
+                <p>ReDesign</p>
+                <p>Fast, Powerful & Most Secure Network Solutions for Smart Home & Businesses</p><br>
+                <a href="#">Read more</a>
+             </div>
+             <div class="service_3">
+                <img src="./images/service/002-phone.png" alt="data"><br> <br>
+                <p>Application Ui</p>
+                <p>Fast, Powerful & Most Secure Network Solutions for Smart Home & Businesses</p><br>
+                <a href="#">Read more</a>
+             </div>
+             <div class="service_4">
+                <img src="./images/service/004-app.png" alt="data"><br><br>
+                <p>Mobile App Ui</p>
+                <p>Fast, Powerful & Most Secure Network Solutions for Smart Home & Businesses</p><br>
+                <a href="#">Read more</a>
+             </div>
+             <div class="service_5">
+                <img src="./images/service/006-domain-registration.png" alt="data"><br><br>
+                <p>Web App Ui</p>
+                <p>Fast, Powerful & Most Secure Network Solutions for Smart Home & Businesses</p><br>
+                <a href="#">Read more</a>
+             </div>
+             <div class="service_6">
+                <img src="./images/service/Path 1612.png" alt="data"> <br><br>
+                <p>Web elements</p>
+                <p>Fast, Powerful & Most Secure Network Solutions for Smart Home & Businesses</p> <br>
+                <a href="#">Read more</a><br>
+             </div>
+    
+        </div>
+    </div>
+    <div class="know_about_us">
+      <div class="know_img">
+        <img src="./images/img/undraw_about_me_wa29@2x.png" alt="picture">
+      </div>
+      <div class="know_p">
+        
+          <p> <b>Know about UiExpert</b> <br> <br>
+          I always follow professional Workflow and provide you best service <br> with resealable costs.</p> <br> <br>
+
         </div>
     </div>
 
     <div class="footer"></div>
-
+   
 
 </body>
 </html>
