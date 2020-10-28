@@ -3,11 +3,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 10px 10px 10px 10px;
+            background: white;
+            margin: auto;
+        }
+    
+    .header{
+        padding: 50px;
+        text-align: left;
+        background: white;
+        background-image: url('./Path\ 1361.png');
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+        background-position: right top;
+
+    }
+    .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+        }
+    .nav-bar{
+        margin-top: 0%;
+        margin-right: 0%;
+        
+    }
+    .title{
+        align-items: flex-start;
+        color: blue;
+        font-size: medium;
+    }
+    li {
+        float: left; 
+        list-style-type: none;
+        text-decoration: none;
+        }
+    a {
+        display: inline;
+        padding: 8px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    #logIn{
+        border: orange solid ;
+        background-color:orange;
+        border-radius: 30%;
+    }
+
+    .grid-container{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 50% 50%;
+    }
+    .column1{
+        font-size: 30px;
+        color: darkslategrey;
+
+    }
+    #paragraph{
+        font-size: 20px;
+        color: darkslategrey;
+    }
+    #btn{
+        background-color: blue;
+        border-radius: 50%;
+        width: 100px;
+        height: 50px;
+    }
+   
+
+   
+    </style>
 </head>
 <body>
     
-<p>Naadam se da ovo radi :D </p>
-<p>Jos jedna proba :) </p>
+    <div class="header">
+        <div class="flex-container">
+            <div class="title"><b>Web</b> UIExpert</div>
+            
+            <div class="nav-bar">
+                
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#potrfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#logIn" id="logIn">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="column1">
+            <h1>Provide You best UI Service</h1>
+            <p id="paragraph">Mobile App Design and Developement Studio. You can hire us.</p>
+            <button type="button" id="btn">
+                <img src="./wave.png" alt="button" id="wave-img"  width="20px" height="20px">
+                Wave Me
+            </button>
+        </div>
+        <div class="column2">
+            <img src="./cover.png" alt="cover page" width="400px" height="400px">
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
 
 </body>
 </html>
