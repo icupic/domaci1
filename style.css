@@ -435,8 +435,6 @@ text-align: center;
 }
 .about_us{
     background-image: url(./images/img/Path\ 1658.png);
-
-
 }
 .about_us_heading{
     display: flex;
@@ -461,6 +459,7 @@ text-align: center;
     justify-items: center;
     align-items: center;
 }
+
 .about_us_img p{
     color: #D6D6D6;
     font-family: 'Roboto';
