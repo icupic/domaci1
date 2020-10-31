@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+.contact_form{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    column-gap: 10%;
+    margin-left: 10%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form h2{
+    font-family: 'Lato';
+    color: #564FD6;
+    font-size: 2rem;
+}
+.real_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+.real_form input{
+    text-decoration: transparent;
+    background: transparent;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+    border-bottom: 2px solid#564FD6;
+    width: 70%;
+    height: 50px;
+    font-family: 'Roboto';
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.form_image img{
+    max-width:100% ;
+    max-height: 100%;
+    margin-top: 25%;
+}
+.real_form input[type="submit"]{
+    border: 2px solid#564FD6 ;
+    color: #564FD6 ;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.real_form input:focus{
+  outline: none;
+}
+.real_form input[type="submit"]:hover{
+    background-color: #564FD6 ;
+    color: white;
+}
+.real_form input::placeholder{
+    font-family: 'Roboto';
+}
+.location{
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    column-gap: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.location_map{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/contact/map.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-content: center;
+    justify-content: center;
+    opacity: 0.9;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.location_data{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(#A5A2F6,#564FD6);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.location_data h2{
+    color: white;
+    font-family: 'Roboto';
+}
+.location_data a{
+   text-decoration: none;
+   font-family: 'Roboto';
+   font-weight: bold;
+   font-size: 1rem;
+   color: white;
+   border:  5px solid white;
+   padding: 10px;
+   align-self: center;
+}
+.location_data p{
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: white;
+}
+.location_data a:hover{
+    background-color: white;
+    border:  5px solid ,#564FD6;
+    color: #564FD6;
+
+}
+.newsletter{
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.newsletter h2{
+    text-align: center;
+    color: #564FD6;
+    font-family: 'Lato';
+    font-size: 2rem;
+}
+.newsletter form{
+    margin-top: 5%;
+    
+}
+.newsletter input[type="email"]{
+    background: transparent;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+    border-bottom: 2px solid#564FD6;
+    margin-left: 30%;
+    width: 30%;
+}
+.newsletter input[type="submit"]{
+    background: transparent;
+    border: 2px solid#564FD6 ;
+    color: #564FD6 ;
+    font-family: 'Roboto';
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 25px;
+}
+.newsletter input[type="submit"]:hover{
+    background-color: #564FD6 ;
+    color: white;
+}
+.newsletter input::placeholder{
+    font-family: 'Roboto';
+}
+.footer{
+    margin-top: 15%;
+}
