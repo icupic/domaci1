@@ -160,3 +160,79 @@
 .footer{
     margin-top: 15%;
 }
+@media screen and (max-width: 600px){
+    .contact_form{
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns:  1fr ;
+        grid-template-rows: 1fr 1fr;
+        width: max-content;
+    }
+    .form{
+        margin-top: 10%;
+        width: 100%;
+    }
+    .form h2{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .real_form{
+        font-size: 2rem;
+        width: 100%;
+    
+    }
+    .real_form input{
+       font-size: 2rem;
+        width: 100%;
+        height: 50px;
+       
+    }
+    .real_form input[type="submit"]{
+        height: 4rem;
+    }
+    
+    .location{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: max-content;
+        margin-left: 50%;
+        row-gap: 10%;
+        margin-top: 15%;
+    }
+    .location_data a{
+        font-size: 3rem;
+     }
+     .location_data p{
+         font-size: 3rem;
+     }
+     
+     .newsletter  {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
+         margin-top: 75%;
+         width: max-content;
+     }
+     .location_data h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+     .newsletter form{
+         display: flex;
+         flex-direction: row;
+         width: fit-content;
+     }
+     .newsletter h2{
+         font-size: 4rem;
+     }
+     .newsletter input[type="email"]{
+         font-size: 4rem;
+         width: 60%;
+         align-self: flex-start;
+         margin-left: 5%;
+     }
+     .newsletter input[type="submit"]{
+         font-size: 3rem;
+         width: fit-content;
+}
