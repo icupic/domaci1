@@ -777,8 +777,18 @@ outline: none;
     }
     .about_us_footer{
         font-size: 2rem;
+    } }
+@media (max-width:1100px){
+       body{
+           display: grid;
+           font-size: 2rem;
+       }
+    .our_success{
+        width: 100%;
+        margin-left: 0;
     }
-     
-      
-  
+    .our_success_text{
+        text-align: center;
     }
+    .
+}

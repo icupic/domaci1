@@ -127,6 +127,7 @@
     color: #564FD6;
     font-size: 2rem;
 }
+ 
 .real_form{
     display: flex;
     flex-direction: column;
@@ -167,7 +168,23 @@
 }
 .real_form input::placeholder{
     font-family: 'Roboto';
+    tex
+  
+
 }
+.real_form input:focus::placeholder{
+    transform: translateY(-100%);
+    transition: 0.5s ease-in ;
+    animation-fill-mode: forwards;
+    animation: place_holder;
+}
+@keyframes place_holder{
+    0%   { transform:translateY(0%);}
+    50%  { transform:translateY(-50%);}
+    100% { transform:translateY(-100%);}
+}
+
+
 .location{
     margin-top: 15%;
     display: grid;
@@ -248,7 +265,8 @@
     border-left: white;
     border-bottom: 2px solid#564FD6;
     margin-left: 30%;
-    width: 30%;
+    width: 40%;
+    height: 50px;
 }
 .newsletter input[type="submit"]{
     background: transparent;
@@ -266,6 +284,12 @@
 }
 .newsletter input[type="email"]:focus{
     outline: none;
+}
+.newsletter input:focus::placeholder{
+    transform: translateY(-100%);
+    transition: 0.5s ease-in ;
+    animation-fill-mode: forwards;
+    animation: place_holder;
 }
 .newsletter input::placeholder{
     font-family: 'Roboto';
