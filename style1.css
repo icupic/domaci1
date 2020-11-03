@@ -285,27 +285,26 @@
     font-weight: bold;
 }
 @media(max-width:600px){
-    *{
-        box-sizing: border-box;
+    body{
+        display: grid;
     }
     .design_sketch_testing{
-        width: max-content;
+        width: 100%;
         margin-top: 10%;
-        margin-left: 50%;
     }
     .design_sketch_testing p{
         font-size: 3rem;
-        
-      
-    }
+        }
     .design_sketch_testing_img{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 5%;}
+        row-gap: 5%;
+        font-size: 3rem;
+    }
     .design_sketch_testing_img img{
-            max-width: 140px;
-            max-height: 140px;
+            max-width: 160px;
+            max-height: auto;
      }
    
      .our_workflow{
@@ -314,7 +313,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 2fr;
             row-gap: 5%;
-            width: max-content;
+            width: 100%;
      }
         .workflow_tab p{
             font-size: 3rem;
@@ -350,10 +349,10 @@
             margin: 10%;
             display: flex;
            flex-direction: column;
-            width: max-content;
-            margin-left: 10%;
+            width: 100%;
             justify-items: center;
             align-items: center;
+            margin-left: 0;
         }
         .our_blog_text h2{
             font-size: 4rem;
@@ -386,7 +385,7 @@
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             width: max-content;
-            column-gap: 70%;
+            column-gap: 10%;
 
         
         }

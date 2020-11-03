@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
 }
+body{
+}
 
 .header{
 padding: 50px;
@@ -543,247 +545,240 @@ outline: none;
     @media  (max-width:600px){
     
         body{
-            width: 100vw;
-        }
-        .about_us{
-            margin-top: 15%;
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            width: max-content;   }
-        
-        .about_us_heading{
-            font-size: 2rem;
-         
         }
-        .about_us_heading h2{
-            font-size: 3rem;
+        .header{
+            background-image: none;
         }
-        .about_us_heading p{
-            font-size: 2rem;
-            width: fit-content;
-        }
-        
-        .about_us_img p{
-           font-size: 2rem;
-        }
-        .about_us_footer{
-            font-size: 2rem;
-        }
-
-
-        .our_success{
-            margin-top: 10%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            width: max-content;
-            margin-left: 50%;
-            text-align: center;
-        }
-        .success_text{
-            text-align: center;
-            align-self: center;
-       }
-        .success_text h3{
-            text-align: center;
-            font-size: 3rem;
-        }
-        .success_text p{
-            font-size: 3rem;
-          
-        }
-        .success_img{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            width: max-content;
-            column-gap: 25px;
-
-        }
-
-       
-        .portfolio{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin-top: 100px;
-            width: max-content;
-            justify-items: center;
-            font-size: 3rem;
-        }
-        .portfolio_text{
-            width: 100%;
-            font-size: 4rem;
-            width: fit-content;
-        }
-        .portfolio_text h4{
-            font-size: 5rem;
-        }
-        .portfolio_img{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr ;
-            row-gap: 30px;
-            column-gap: 25px;
-            align-items: center;
-            justify-items: center;
-            width: max-content;
-            margin-left: 15%;
-        }
-        .portfolio_img img{
-             width: 500px;
-            height: auto;
     
-        }
-        .know_about_us{
-            display: flex;
-            flex-direction: column;
-            width: max-content;
-            margin-left: 15%;
-            margin-top: 10%;
-            column-gap: 5%;
-        
-        }
-        .know_p{
-           width:80%;
-        }
-        .know_p p{
-            font-size: 3rem;
-        }
-        .know_img img{
-            max-width: 80%;
-        }
-
-        .main_services{
-             width: max-content;
-            margin-left: 0;
-        }
-    .service{
-            display: grid;
-            grid-template-columns: 1fr ;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-            row-gap: 40px;
-            width: 100%;
-            margin-left: 15%;
-            margin-right: 15%;
-        }  
-    .service img{
-            width: 200px;
-            height: 200px;
-        }
-    .h_service{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        align-content: flex-start;
-        justify-content: flex-start;
-        font-size: 3rem;
-    }
-
-    #p_1{
-        font-size: 3rem;
-        text-align: justify;
-        width: 60%;
-    }
-    .service_1{
-       max-width: 50%;
-       justify-content: center;
-       font-size: 3rem;
-    }
-    .service_2{
-        max-width: 50%;
-        justify-content: center;
-        font-size: 3rem;
-    }
-    .service_3{
-        max-width: 50%;
-        justify-content: center;
-        font-size: 3rem;
-    }
-    .service_4{
-        max-width: 50%;
-        justify-content: center;
-        font-size: 3rem;
-    }
-    .service_5{
-        max-width: 50%;
-        justify-content: center;
-        font-size: 3rem;
-    }
-    .service_6{
-        max-width: 50%;
-        justify-content: center;
-        font-size: 3rem;
-    }
-    .header{
-        background-image: none;
-    }
-
     .flex-container{
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
         width: 100%;
+        margin-left: 0;
        
        }
      .title{
-         font-size: 5rem;
+         font-size: 4rem;
          margin-bottom: 10%;
          width: 100%;
-          text-align: center;
+        text-align: center;
      }
-   .nav-bar{
+    .nav-bar{
        display: flex;
        flex-direction: row;
-       width: fit-content;
-       flex-wrap: wrap;
+       width: 100%;
        height: auto;
+       align-content: center;
+       justify-content: center;
        background-image: linear-gradient(rgb(132, 132, 252), blue);
        }
     .nav-bar ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        column-gap: 5%;
-        width: fit-content;
-        height: auto;
-        font-size: 3rem;
-        margin-right: 0;
-           }
-   .grid-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;   
+    }
+    .nav-bar li{
+        font-size: 2rem;
+    }
+    
+    .grid-container{
        margin-top: 10%;
        display: grid;
        padding: 10px;
        grid-template-columns: 1fr;
        grid-template-rows: 1fr 1fr;
        row-gap: 5%;
-       width: max-content;
+       width: 100%;
        }
-   .column1{
+    .column1{
        display: flex;
        flex-direction: column;
        font-size: 3rem;
-       color: #534D4D;
-       width: fit-content;
-       margin-left: 25%;
-
-       }
-   .column1 #paragraph{
-       font-size: 2rem;
-       width: fit-content;
+       width: 90%;
+    }
+    .column1 #paragraph{
+       font-size: 3rem;
+       width: 80%;
        height: fit-content;
-   }
-   #btn p{
+    }
+    #btn p{
      font-size: 3rem;  
-   }
-   #btn img{
+    }
+    #btn img{
        width: 50px;
        height: 50px;
-   }
-   .column2{
-       margin-left: 20%;
-   }
     }
-
-
+    .column2 img{
+      width: 80%;
+    }
+    .main_services{
+        width: 100%;
+    }
+    .service{
+       display:flex;
+       flex-direction: column;
+       width: 100%;
+       justify-items: center;
+       align-items: center;
+       margin-left: 5%;
+    }  
+    .service img{
+       width: 200px;
+       height: 200px;
+    }
+    .h_service{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    font-size: 2rem;
+    }
+    
+    #p_1{
+    font-size: 3rem;
+    text-align: justify;
+    width: 60%;
+    }
+    .service_1{
+    justify-content: center;
+    font-size: 3rem;
+    }
+    .service_2{
+    justify-content: center;
+    font-size: 3rem;
+    }
+    .service_3{
+    justify-content: center;
+    font-size: 3rem;
+    }
+    .service_4{
+    justify-content: center;
+    font-size: 3rem;
+    }
+    .service_5{
+    justify-content: center;
+    font-size: 3rem;
+    }
+    .service_6{
+    justify-content: center;
+    font-size: 3rem;
+    }
+    
+    .know_about_us{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10%;
+        column-gap: 5%;
+    
+    }
+    .know_p{
+       width:100%;
+    }
+    .know_p p{
+        font-size: 3rem;
+    }
+    .know_img img{
+        max-width: 80%;
+    }
+      
+    .portfolio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 100px;
+        width: 100%;
+        justify-items: center;
+        font-size: 3rem;
+        margin-left: 0;
+    }
+    .portfolio_text{
+        width: 100%;
+        font-size: 4rem;
+        width: fit-content;
+    }
+    .portfolio_text h4{
+        font-size: 5rem;
+    }
+    .portfolio_img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        row-gap: 30px;
+        column-gap: 25px;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .portfolio_img img{
+         width: 500px;
+        height: auto;
+    
+    }
+    .our_success{
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+    .success_text{
+        text-align: center;
+        align-self: center;
+    }
+    .success_text h3{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .success_text p{
+        font-size: 3rem;
+      
+    }
+    .success_img{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    .success_1{
+        width: fit-content;
+    }
+    .about_us{
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 5%;   }
+    
+    .about_us_heading{
+        font-size: 2rem;
+        text-align: center;
+     
+    }
+    .about_us_heading h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .about_us_heading p{
+        font-size: 3rem;
+        text-align: center;
+        width: fit-content;
+    }
+    
+    .about_us_img p{
+       font-size: 2rem;
+    }
+    .about_us_footer{
+        font-size: 2rem;
+    }
+     
+      
+  
+    }
