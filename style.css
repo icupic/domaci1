@@ -1,8 +1,7 @@
 *{
     box-sizing: border-box;
 }
-body{
-}
+
 
 .header{
 padding: 50px;
@@ -109,6 +108,47 @@ outline: none;
 #btn img{
     align-self: center;
 }
+.column1 button:focus{
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes bounceOutUp {
+    20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+    }
+    }
+    @keyframes bounceOutUp {
+    20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+    }
+    }
+  
 .column1 h1{
   font-family: 'Lato';
 }
@@ -312,6 +352,20 @@ outline: none;
     width: 100%;
     height: auto;
 }
+#animation1{
+  animation-name: example;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  border-radius: 10%;
+  padding: 10px 10px 10px 10px;
+}
+@keyframes example {
+    0%   {background-color:rgb(168, 137, 252); left:0px; top:0px;}
+    25%  {background-color:rgb(52, 161, 194); left:200px; top:0px;}
+    50%  {background-color:rgb(107, 107, 233); left:200px; top:200px;}
+    75%  {background-color:rgb(114, 110, 165); left:0px; top:200px;}
+    100% {background-color:rgb(87, 85, 112); left:0px; top:0px;}
+  }
 .portfolio{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -391,7 +445,8 @@ outline: none;
     box-shadow: 0 2px 2px #C5C3F9;
     border-radius: 30px;
 }
-.success_1 #success_p1{
+
+.success_1 .success_p1{
     color: #4B647E;
     font-weight: bold;
     text-align: center;
@@ -541,6 +596,42 @@ outline: none;
 #bttn img{
      align-self: center;
     }
+#bttn:focus{
+    -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes shake {
+  0%, 100% {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+  -webkit-transform: translate3d(10px, 0, 0);
+  transform: translate3d(10px, 0, 0);
+  }
+  }
+  @keyframes shake {
+  0%, 100% {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+  -webkit-transform: translate3d(10px, 0, 0);
+  transform: translate3d(10px, 0, 0);
+  }
+  } 
 
     @media  (max-width:600px){
     
@@ -683,6 +774,9 @@ outline: none;
     .know_img img{
         max-width: 80%;
     }
+    #animation1{
+        animation: none;
+    }
       
     .portfolio{
         display: grid;
@@ -783,6 +877,12 @@ outline: none;
            display: grid;
            font-size: 2rem;
        }
+      .header{
+          background-image: none;
+      }
+      .nav-bar{
+        background-image: linear-gradient(rgb(132, 132, 252), blue);
+      }
     .our_success{
         width: 100%;
         margin-left: 0;
@@ -790,5 +890,5 @@ outline: none;
     .our_success_text{
         text-align: center;
     }
-    .
+    
 }
